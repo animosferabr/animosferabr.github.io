@@ -26,7 +26,7 @@
 <body>
 <main>
   <h1>Política de Privacidade</h1>
-  <p class="muted">Massa Crítica Fit · Última atualização: 21 de outubro de 2026</p>
+  <p class="muted">Massa Crítica Fit · Última atualização: 28 de outubro de 2026</p>
 
   <p>
     Esta Política de Privacidade explica como o aplicativo <strong>Massa Crítica Fit</strong>
@@ -41,13 +41,15 @@
     <li>Os treinos que você cria ficam salvos <strong>somente no seu aparelho</strong>.</li>
     <li>O aplicativo exibe anúncios do <strong>Google AdMob</strong>, que pode coletar
       identificadores do dispositivo para exibir e medir anúncios.</li>
+    <li>Os pacotes de treino são baixados do <strong>Google Firebase</strong>, que verifica se o
+      aplicativo é original (sem coletar dados pessoais seus).</li>
     <li>Nós não vendemos dados pessoais.</li>
   </ul>
 
   <h2>2. Dados armazenados no seu aparelho</h2>
   <p>
     Os treinos (nome, dias da semana, exercícios, séries, tempos e configurações de ciclo),
-    os exercícios que você criar
+    os exercícios que você criar, os pacotes de treino que você liberou ou segue
     e preferências de uso são gravados apenas na memória interna do seu aparelho.
     Nós não temos acesso a essas informações e elas não são enviadas para nossos servidores
     (o aplicativo não possui servidores próprios).
@@ -85,19 +87,29 @@
     <em>Configurações do Android &gt; Google &gt; Anúncios</em> (o caminho pode variar conforme o aparelho).
   </p>
 
+  <p>
+    <strong>Pacotes de treino (Google Firebase).</strong> O conteúdo dos pacotes de treino (nomes,
+    exercícios, descrições e imagens) é baixado do Google Firebase (Cloud Firestore). Para impedir
+    o acesso por cópias não oficiais, o Firebase App Check usa a API Play Integrity do Google para
+    confirmar que a solicitação vem do aplicativo original instalado pelo Google Play. Nesse processo
+    o Google pode tratar dados técnicos do aparelho e da conexão (como endereço IP, modelo e versão
+    do sistema). Nenhum dado de treino ou pessoal é enviado. O tratamento segue os
+    <a href="https://firebase.google.com/support/privacy">termos de privacidade do Firebase</a>.
+  </p>
+
   <h2>4. Permissões utilizadas</h2>
   <table>
     <tr><th>Permissão</th><th>Para que serve</th></tr>
     <tr><td>Notificações</td><td>Mostrar o cronômetro do treino e os botões Pausar/Pular enquanto a tela está bloqueada.</td></tr>
     <tr><td>Serviço em primeiro plano e manter o aparelho ativo</td><td>Continuar contando o tempo e tocar os alertas sonoros durante o treino, mesmo com a tela desligada. Usado somente enquanto um treino está em andamento.</td></tr>
-    <tr><td>Internet e estado da rede</td><td>Carregar os anúncios.</td></tr>
+    <tr><td>Internet e estado da rede</td><td>Carregar os anúncios e baixar os pacotes de treino.</td></tr>
     <tr><td>ID de publicidade</td><td>Usado pelo Google AdMob, conforme a seção 3.</td></tr>
   </table>
   <p>O aplicativo não acessa câmera, microfone, contatos, arquivos, localização precisa nem dados de saúde do sistema.</p>
 
   <h2>5. Compartilhamento de dados</h2>
   <p>
-    Não compartilhamos dados pessoais com terceiros, exceto o processamento realizado pelo Google AdMob
+    Não compartilhamos dados pessoais com terceiros, exceto o processamento realizado pelo Google (AdMob e Firebase)
     descrito na seção 3. Poderemos fornecer informações quando exigido por lei ou ordem judicial.
   </p>
 
