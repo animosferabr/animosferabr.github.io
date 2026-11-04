@@ -26,7 +26,7 @@
 <body>
 <main>
   <h1>Política de Privacidade</h1>
-  <p class="muted">Massa Crítica Fit · Última atualização: 28 de outubro de 2026</p>
+  <p class="muted">Massa Crítica Fit · Última atualização: 4 de novembro de 2026</p>
 
   <p>
     Esta Política de Privacidade explica como o aplicativo <strong>Massa Crítica Fit</strong>
@@ -37,20 +37,22 @@
 
   <h2>1. Resumo</h2>
   <ul>
-    <li>Não é necessário criar conta nem informar nome, e-mail ou telefone.</li>
+    <li>Não é necessário criar conta. Entrar com a conta Google na aba <em>Perfil</em> é opcional.</li>
     <li>Os treinos que você cria ficam salvos <strong>somente no seu aparelho</strong>.</li>
     <li>O aplicativo exibe anúncios do <strong>Google AdMob</strong>, que pode coletar
       identificadores do dispositivo para exibir e medir anúncios.</li>
     <li>Os pacotes de treino são baixados do <strong>Google Firebase</strong>, que verifica se o
       aplicativo é original (sem coletar dados pessoais seus).</li>
+    <li>Os lembretes (beber água e voltar a treinar) são gerados <strong>no próprio aparelho</strong>,
+      sem envio de dados, e podem ser desligados na aba <em>Perfil</em>.</li>
     <li>Nós não vendemos dados pessoais.</li>
   </ul>
 
   <h2>2. Dados armazenados no seu aparelho</h2>
   <p>
     Os treinos (nome, dias da semana, exercícios, séries, tempos e configurações de ciclo),
-    os exercícios que você criar, os pacotes de treino que você liberou ou segue
-    e preferências de uso são gravados apenas na memória interna do seu aparelho.
+    o modo de execução (tempo ou repetições), os exercícios que você criar, os pacotes de treino que você liberou ou segue,
+    as configurações dos lembretes e preferências de uso (como mostrar ou ocultar a imagem do exercício no timer) são gravados apenas na memória interna do seu aparelho.
     Nós não temos acesso a essas informações e elas não são enviadas para nossos servidores
     (o aplicativo não possui servidores próprios).
   </p>
@@ -60,7 +62,7 @@
     configurações do aparelho.
   </p>
 
-  <h2>3. Anúncios (Google AdMob)</h2>
+  <h2>3. Anúncios e serviços do Google</h2>
   <p>
     Para manter o aplicativo gratuito, exibimos anúncios fornecidos pelo Google AdMob.
     O SDK do AdMob pode coletar e processar automaticamente:
@@ -97,19 +99,35 @@
     <a href="https://firebase.google.com/support/privacy">termos de privacidade do Firebase</a>.
   </p>
 
+  <p>
+    <strong>Login opcional com a conta Google (Firebase Authentication).</strong> Se você escolher
+    <em>Entrar com Google</em> na aba Perfil, o Google compartilha com o aplicativo o seu nome, endereço
+    de e-mail e foto do perfil, e o Firebase Authentication cria um identificador de usuário para a sua conta.
+    Esses dados são usados apenas para identificar você no aplicativo e exibir seu perfil. Você pode sair
+    a qualquer momento em <em>Perfil &gt; Sair da conta</em> e solicitar a exclusão da conta pelo contato
+    informado nesta política. O tratamento segue os
+    <a href="https://firebase.google.com/support/privacy">termos de privacidade do Firebase</a>.
+  </p>
+  <p>
+    <strong>Biblioteca de exercícios.</strong> As fotos e a lista de exercícios da aba Exercícios são
+    baixadas de um repositório público no GitHub (free-exercise-db). Como em qualquer acesso à internet,
+    o servidor recebe dados técnicos da conexão (como endereço IP); nenhum dado pessoal é enviado.
+  </p>
+
   <h2>4. Permissões utilizadas</h2>
   <table>
     <tr><th>Permissão</th><th>Para que serve</th></tr>
-    <tr><td>Notificações</td><td>Mostrar o cronômetro do treino e os botões Pausar/Pular enquanto a tela está bloqueada.</td></tr>
-    <tr><td>Serviço em primeiro plano e manter o aparelho ativo</td><td>Continuar contando o tempo e tocar os alertas sonoros durante o treino, mesmo com a tela desligada. Usado somente enquanto um treino está em andamento.</td></tr>
-    <tr><td>Internet e estado da rede</td><td>Carregar os anúncios e baixar os pacotes de treino.</td></tr>
+    <tr><td>Notificações</td><td>Mostrar o cronômetro do treino e os botões Pausar/Pular/Concluir série enquanto a tela está bloqueada e os lembretes configuráveis na aba Perfil: beber água (das 8h às 22h, se você ativar) e voltar a treinar após 3 dias sem abrir o aplicativo (ativado por padrão, pode ser desligado). A permissão é pedida só quando necessária e pode ser revogada nas configurações do Android.</td></tr>
+    <tr><td>Serviço em primeiro plano e manter o aparelho ativo</td><td>Continuar contando o tempo e tocar os alertas sonoros durante o treino, mesmo com a tela desligada. Usado somente enquanto um treino está em andamento e o aplicativo está aberto: ao fechar o aplicativo (removê-lo da tela de apps recentes), o treino é encerrado.</td></tr>
+    <tr><td>Agendamento de tarefas em segundo plano</td><td>Disparar os lembretes no horário certo, mesmo com o aplicativo fechado ou após reiniciar o aparelho. Nenhum dado é enviado.</td></tr>
+    <tr><td>Internet e estado da rede</td><td>Carregar os anúncios, baixar os pacotes de treino e a biblioteca de exercícios e, se você quiser, entrar com a conta Google.</td></tr>
     <tr><td>ID de publicidade</td><td>Usado pelo Google AdMob, conforme a seção 3.</td></tr>
   </table>
   <p>O aplicativo não acessa câmera, microfone, contatos, arquivos, localização precisa nem dados de saúde do sistema.</p>
 
   <h2>5. Compartilhamento de dados</h2>
   <p>
-    Não compartilhamos dados pessoais com terceiros, exceto o processamento realizado pelo Google (AdMob e Firebase)
+    Não compartilhamos dados pessoais com terceiros, exceto o processamento realizado pelo Google (AdMob, Firebase e login com Google)
     descrito na seção 3. Poderemos fornecer informações quando exigido por lei ou ordem judicial.
   </p>
 
